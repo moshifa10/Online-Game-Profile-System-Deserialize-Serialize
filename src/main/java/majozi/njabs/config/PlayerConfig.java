@@ -55,14 +55,9 @@ public class PlayerConfig {
         Position position = new Position(5,76, "East");
         Player player = new Player("Njabs", 7, true, stats, list, position);
 
-        try {
-            FileReader read = new FileReader("player.json");
+        String json = gson.toJson(player);
+        System.out.println(json);
 
-            String json = gson.toJson(player);
-            System.out.println(json);
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
     }
 
 
