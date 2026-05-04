@@ -1,0 +1,27 @@
+{
+  "username": "ShadowX",
+  "level": 12,
+  "online": true,
+  "stats": {
+    "health": 85,
+    "energy": 60,
+    "experience": 2450
+  },
+  "inventory": [
+    {
+      "name": "Sword",
+      "type": "weapon",
+      "damage": 25
+    },
+    {
+      "name": "Health Potion",
+      "type": "consumable",
+      "heal": 20
+    }
+  ],
+  "position": {
+    "x": 10,
+    "y": 5,
+    "direction": "NORTH"
+  }
+}
