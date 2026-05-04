@@ -1,16 +1,14 @@
 package majozi.njabs;
-
-import javax.swing.text.Position;
 import java.util.List;
 
 public class Player {
 
-    public String username;
-    public int level;
-    public  boolean online;
-    public Stats stats;
-    public List<Inventory> inventory;
-    public Position position;
+    private String username;
+    private int level;
+    private   boolean online;
+    private Stats stats;
+    private List<Inventory> inventory;
+    private Position position;
 
     public Player(String username, int level, boolean online, Stats stats, List<Inventory> inventory, Position position){
         this.username = username;
@@ -32,4 +30,17 @@ public class Player {
     public boolean isOnline() {
         return online;
     }
+
+    public List<Inventory> getInventory() {
+        return inventory;
+    }
+
+    public Stats getStats() {
+        return stats;
+    }
+
+    public Position getPosition() {
+        return position;
+    }
+
 }
