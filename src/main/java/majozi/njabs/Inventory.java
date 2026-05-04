@@ -6,7 +6,6 @@ public class Inventory {
     private Integer damage;
     private Integer heal;
 
-    // Default constructor (important for Gson)
     public Inventory() {}
 
     public String getName() {
@@ -34,5 +33,21 @@ public class Inventory {
             return "Heal: " + heal;
         }
         return "No effect";
+    }
+
+    public void setDamage(Integer damage) {
+        this.damage = damage;
+    }
+
+    public void setHeal(Integer heal) {
+        this.heal = heal;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
